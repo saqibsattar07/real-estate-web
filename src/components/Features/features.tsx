@@ -1,4 +1,5 @@
-import PropertyCard from "./property-card";
+import PropertyCard from "../Property/property-card";
+import styles from "./features.module.css";
 
 export const propertiesList = [
   {
@@ -95,13 +96,13 @@ export const propertiesList = [
 
 const Features = () => {
   return (
-    <div className="container mx-auto pt-10 pb-20">
-      <h3 className="text-4xl text-center mb-2">Featured Properties</h3>
-      <p className="text-center text-muted-foreground">
+    <div className={styles.container}>
+      <h3 className={styles.title}>Featured Properties</h3>
+      <p className={styles.subtitle}>
         Explore our exquisite featured properties showcasing unparalleled charm,
         luxurious amenities, and prime locations
       </p>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20 justify-center">
+      <div className={styles.grid}>
         {propertiesList.map((property) => (
           <PropertyCard key={property.id} {...property} />
         ))}

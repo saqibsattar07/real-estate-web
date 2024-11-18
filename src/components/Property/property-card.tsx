@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { propertiesList } from "./features";
+import { propertiesList } from "../Features/features";
 import Image from "next/image";
 import { FaBath, FaBed, FaRegSquare, FaStar } from "react-icons/fa6";
 

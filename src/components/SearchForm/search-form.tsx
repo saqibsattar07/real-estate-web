@@ -1,16 +1,16 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import { Form, FormControl, FormField, FormItem, FormLabel } from "./ui/form";
-import { Input } from "./ui/input";
+import { Form, FormControl, FormField, FormItem, FormLabel } from "../ui/form";
+import { Input } from "../ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
-import { Button } from "./ui/button";
+} from "../ui/select";
+import { Button } from "../ui/button";
 
 function generatePriceValues() {
   let price = [];
